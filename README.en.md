@@ -4,39 +4,39 @@
 
 [Download 0.9.8](https://github.com/Maximrank1/nodenix-monitor/releases/latest) | [Русский](README.md) | [Report a bug](https://github.com/Maximrank1/nodenix-monitor/issues)
 
-I wanted one app for menu bar monitoring and everyday Mac maintenance. That's how Nodenix Monitor started. The app is free.
+I made Nodenix Monitor because I wanted to see what my Mac was doing straight from the menu bar. Temperatures, CPU load, memory and network activity are all in one place. I later added tools for cleaning up files and removing apps. The app is free.
 
 ## What it does
 
-- Menu bar monitoring for CPU load, memory, temperatures, network and disks.
-- Available temperature sensors, CPU and GPU clocks, power and fans.
-- Mac overview and battery health.
-- App removal with a review of related files.
-- Cleaning of selected temporary files, browser caches and logs.
-- Login items and background service management.
+- Shows CPU load, memory, temperatures, network activity and disks in the menu bar.
+- Shows the sensors it finds, CPU and GPU clocks, power readings and fans.
+- Shows Mac details and battery health.
+- Helps find files related to an app before removing it.
+- Lets you choose temporary files, browser caches and logs to clean up.
+- Shows login items and background services.
 
-Temperature cards appear only when a sensor returns a valid reading. Missing or unreadable sensors stay hidden. Fan controls are hidden on fanless MacBook Air models.
+A temperature card appears when a sensor is available and returns a valid reading. If macOS cannot read a sensor, I leave that card out. Fan controls are hidden on fanless MacBook Air models.
 
 ## Install
 
-Requires an Apple Silicon Mac with macOS 14 or later. You do not need to install Xcode, Homebrew, Python or separate libraries.
+You need an Apple Silicon Mac with macOS 14 or later. There is no need to install Xcode, Homebrew, Python or separate libraries.
 
 1. Download the ZIP from the [latest release](https://github.com/Maximrank1/nodenix-monitor/releases/latest).
 2. Extract it and move **Nodenix Monitor.app** to **Applications**.
-3. Open the app. Installing the fan control service on compatible Macs requires administrator approval.
+3. Open the app. Installing the fan control service requires administrator approval.
 
-The current build has not been notarized by Apple, so macOS may show a warning on first launch.
+This build has not been notarized by Apple yet, so macOS may show a warning the first time you open it.
 
-## Compatibility
+## Macs checked so far
 
-Version 0.9.8 was checked on a 13-inch M1 MacBook Pro. A user also checked the sensors and light appearance in 0.9.7 on a 13-inch M4 MacBook Air. Version 0.9.8 improves handling of invalid GPU readings and sensor recognition.
+I checked the 0.9.8 build on a 13-inch M1 MacBook Pro. A friend checked the sensors in 0.9.7 on a 13-inch M4 MacBook Air. In 0.9.8, I improved the handling of invalid GPU readings and sensor recognition.
 
-The app discovers available sensors at startup and reads the channels it finds. Available measurements depend on the Mac model and macOS version. Physical testing has not confirmed every M1-M6 variant, including Pro, Max and Ultra models.
+The available sensors vary by Mac. I have not been able to check every M1-M6 model, including Pro, Max and Ultra versions. I cannot promise that every sensor will appear on every Mac.
 
-## Feedback
+## Found a bug?
 
-[Open an issue](https://github.com/Maximrank1/nodenix-monitor/issues) with your Mac model, macOS version and Nodenix version. Please remove personal information from screenshots.
+Open an [issue](https://github.com/Maximrank1/nodenix-monitor/issues) with your Mac model, macOS version and Nodenix version. A screenshot helps too, but please remove personal information first.
 
-Source code and version history are kept in a private repository. This repository contains the description and app downloads. Third-party notices are in [ThirdPartyNotices.txt](ThirdPartyNotices.txt).
+I keep the source code and version history in a private repository. This one has the description and app downloads. Third-party notices are in [ThirdPartyNotices.txt](ThirdPartyNotices.txt).
 
-Nodenix Monitor is free. I may add an optional support link later.
+If I add a way to support development later, I will put a link here. For now, the app is free to use.
