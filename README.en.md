@@ -2,7 +2,7 @@
 
 **Monitoring and maintenance for Apple Silicon Macs**
 
-[Download 0.9.8](https://github.com/Maximrank1/nodenix-monitor/releases/latest) | [Русский](README.md) | [Report a bug](https://github.com/Maximrank1/nodenix-monitor/issues)
+[Download 0.9.9](https://github.com/Maximrank1/nodenix-monitor/releases/latest) | [Русский](README.md) | [Report a bug](https://github.com/Maximrank1/nodenix-monitor/issues)
 
 I made Nodenix Monitor because I wanted to see what my Mac was doing straight from the menu bar. Temperatures, CPU load, memory and network activity are all in one place. I later added tools for cleaning up files and removing apps. The app is free.
 
@@ -23,13 +23,15 @@ You need an Apple Silicon Mac with macOS 14 or later. There is no need to instal
 
 1. Download the ZIP from the [latest release](https://github.com/Maximrank1/nodenix-monitor/releases/latest).
 2. Extract it and move **Nodenix Monitor.app** to **Applications**.
-3. Open the app. Installing the fan control service requires administrator approval.
+3. Open the app. macOS requests administrator approval when you enter the Uninstaller. Installing the fan control service also requires approval.
+
+System Cleanup does not touch the Downloads folder. Before removing an app, you can review the selected files and choose Trash or permanent deletion.
 
 This build has not been notarized by Apple yet, so macOS may show a warning the first time you open it.
 
 ## Macs checked so far
 
-I checked the 0.9.8 build on a 13-inch M1 MacBook Pro. A friend checked the sensors in 0.9.7 on a 13-inch M4 MacBook Air. In 0.9.8, I improved the handling of invalid GPU readings and sensor recognition.
+The app has been checked on a 13-inch M1 MacBook Pro and a 13-inch M4 MacBook Air. Sensor availability and system permissions can vary between Mac models.
 
 The available sensors vary by Mac. I have not been able to check every M1-M6 model, including Pro, Max and Ultra versions. I cannot promise that every sensor will appear on every Mac.
 
